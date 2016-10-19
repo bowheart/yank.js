@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../src/yank.js"></script>
+</head>
+<body>
+	<script>
+		yank.map = {
+			'app': 'app/app',
+			'router': 'app/router',
+			'controller': 'app/controller'
+		};
+		yank.load('app', function(App) {
+			App.init();
+		});
+	</script>
+</body>
+</html>
